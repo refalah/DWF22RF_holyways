@@ -18,7 +18,7 @@ const Card = ({ donateData }) => {
                 <div className='card-content'>
                     <div className='card-title'>
                         <h6 style={{
-                            minHeight: "50px"
+                            minHeight: "40px"
                         }}>{title}</h6>
                     </div>
                     <div className='card-bodies'>
@@ -27,7 +27,12 @@ const Card = ({ donateData }) => {
                             fontSize: "12px"
                         }}>{description}</p>
                     </div>
+                    <div className='progress-bar'>
+                        <div className='red-team'></div>
+                        {/* <div className='grey-team'></div> */}
+                    </div>
                 </div>
+                
                 <div className='btns'>
                     <p>{convertToRupiah(sum)}</p>
                     <button onClick={goToDetailPage}><a>Donate</a></button>                    

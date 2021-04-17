@@ -61,6 +61,7 @@
     color: #C32424;
     padding: 10px 15px;
     border: 1px solid #fff;
+    cursor: pointer;
   }
 
   #basic-nav-dropdown {

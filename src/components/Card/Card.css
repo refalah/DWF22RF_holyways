@@ -48,6 +48,20 @@ h6, p {
     border-radius: 10px;
 }
 
+.progress-bar{
+    
+    background-color: grey;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.progress-bar .red-team {
+    background-color: #C32424;
+    height: 5px;
+    width: 75%;
+    border-radius: 10px;
+}
+
 /* 
 .card .card-body .img-dono {
     object-fit: cover;

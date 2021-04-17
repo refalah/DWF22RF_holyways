@@ -19,8 +19,9 @@
 
 .hero-content-2 h3 {
     font-size: 45px;
+    font-weight: bold;
     margin-top: 0;
-    width: 105%;
+    width: 100%;
     line-height: 58px;
 }
 
