@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+.container {
+    padding: 0 8%;
+}
+
+.card {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-fund {
+    margin: 0;
+    padding: 0;
+}
+
+/* .row .cards {
+    margin: 0 10px;
+} */

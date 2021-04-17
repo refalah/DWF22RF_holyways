@@ -1,0 +1,71 @@
+.detail-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-card img {
+    min-height: 400px;
+    max-height: 400px;
+
+    min-width: 450px;
+    max-width: 450px;
+}
+
+.detail-container {
+    width: 412px;
+}
+
+.detail-container h1 {
+    font-size: 32px;
+    width: 100%;
+}
+
+.detail-container .progress{
+    display: flex;
+    margin: 0;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    height: 25px;
+    font-size: 18px;
+    background: none;
+}
+
+.progress p:first-child{
+    color: #C32424;
+
+}
+
+.progressBar{
+    margin-top: 18px;
+    position: relative;
+    background-color: grey;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    width: 375px;
+}
+.progressBar .red-team {
+    background-color: #C32424;
+    width: 75%;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.donate-info {
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+.detail-container button {
+    margin-top: 40px;
+    background: #C32424;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+}

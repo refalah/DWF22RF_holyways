@@ -1,0 +1,39 @@
+
+.history-content {
+    background: white;
+    padding: 10px 10px;
+    width: 100%;
+    height: 101px;
+}
+
+.history-content p{
+    color: black;
+    font-size: 12px;
+}
+
+.history-content p:first-child{
+    font-weight: 900;
+}
+
+.history-date {
+    padding-top: 10px;
+}
+
+.history-status {
+    padding-top: 15px;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.status-card {
+    background: #00ff8421;
+    color: #00FF47;
+
+    border: none;
+    padding: 2px 25px;
+    border-radius: 10px;
+    font-size: 12px;
+}

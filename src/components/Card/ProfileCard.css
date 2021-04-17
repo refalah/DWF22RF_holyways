@@ -1,0 +1,33 @@
+.profile-card img {
+    width: 180px;
+    height: 221.79px;
+}
+
+.profile-card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profile-data {
+    font-size: 14px;
+    margin-left: 10%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.red-title {
+    color: #C32424;
+}
+
+.history-container {
+    width: 412px;
+}
+
+.history-container h1 {
+    font-size: 24px;
+    width: 100%;
+}

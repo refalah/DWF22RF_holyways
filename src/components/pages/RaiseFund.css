@@ -1,0 +1,19 @@
+
+
+.fund-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.fund-header h3 {
+    font-size: 32px;
+}
+
+.fund-header button {
+    background: #C32424;
+    color: white;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
