@@ -19,14 +19,16 @@ function ModalLogin({open, onClose}) {
             {/* {showModal ? <div> MOdal Here</div> : null} */}
             <div className='dark-overlay' onClick={onClose}></div>
             <div className='modal-login'>
-                    <h5 className="modal-title">Login</h5>
-                    {/* <i onClick={onClose} className='fas fa-times close-btn'></i> */}
-                    <div className='input-group'>
-                        <input type='text' placeholder=' Email' className='input-email'></input>
-                        <input type='password' placeholder=' Password' className='input-password'></input>
+
+                <div className='modal-sample-content'>
+                    <h1>Login</h1>
+                    <div className='input-group-sample'>
+                        <input type='text' placeholder='Email' className='email-input grab-input'></input>
+                        <input type='password' placeholder='Password' className='password-input grab-input'></input>
                     </div>
-                    <div className='modal-login-link' onClick={handleLogin}>Login</div>
-                    <p>Don't have an account ? Click Here</p>
+                    <div style={{textAlign: 'center'}} className='modal-sample-link' onClick={handleLogin}>Login</div>
+                    <p style={{textAlign: 'center'}}>Don't have an account ? Click Here</p>
+                </div>
                    
             </div>
         </>,
