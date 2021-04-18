@@ -10,6 +10,7 @@ import Navbar from './components/Navbar/Navbar'
 import './App.css';
 import PrivateRoute from "./components/PrivateRoute";
 import Home from './components/pages/Home';
+import DonateDetail from './components/pages/DonateDetail/DonateDetail';
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Navbar/>
         <Switch>
           <Route path='/' exact component={Home}></Route>
+          <PrivateRoute path='/donate-detail/:id' exact component={DonateDetail}></PrivateRoute>
          
           
         </Switch>

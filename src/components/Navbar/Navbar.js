@@ -62,7 +62,7 @@ function Navbar(){
                                 <NavDropdown.Item href="#action/3.1" >
                                     <div>Profile</div>
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2" >
+                                <NavDropdown.Item href="#action/3.2" onClick={() => router.push("/raise-fund")}>
                                     <div>Raise Fund</div>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
