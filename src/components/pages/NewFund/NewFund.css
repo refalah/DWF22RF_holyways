@@ -1,0 +1,22 @@
+.fund-header h3 {
+    font-size: 32px;
+}
+
+.btn-fund {
+    background: #C32424;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-fund:last-child {
+    padding: 5px 10%;
+    
+}

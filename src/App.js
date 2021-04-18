@@ -13,6 +13,7 @@ import Home from './components/pages/Home';
 import DonateDetail from './components/pages/DonateDetail/DonateDetail';
 import Profile from './components/pages/Profile/Profile';
 import RaiseFund from './components/pages/RaiseFund';
+import NewFund from './components/pages/NewFund/NewFund';
 
 
 
@@ -28,6 +29,7 @@ function App() {
           <PrivateRoute path='/donate-detail/:id' exact component={DonateDetail}></PrivateRoute>
           <PrivateRoute path='/profile' exact component={Profile}></PrivateRoute>
           <PrivateRoute path='/raise-fund' exact component={RaiseFund}></PrivateRoute>          
+          <PrivateRoute path='/new-fund' exact component={NewFund}></PrivateRoute>          
         </Switch>
       </Router>
       </UserContextProvider>
