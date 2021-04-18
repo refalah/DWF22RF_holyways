@@ -4,6 +4,8 @@ import donateDatas from '../../../fakeData/donateData.json'
 import './DonateDetail.css'
 import {convertToRupiah} from '../../../utils/index'
 import ModalDonate from '../../Modal/ModalDonate'
+import ListDonation from '../../Card/ListDonation'
+import listDonates from '../../../fakeData/listDonate.json'
 
 function DonateDetail() {
     const params = useParams();
@@ -17,7 +19,7 @@ function DonateDetail() {
     return (
         <>
             <div className="container mt-5">
-                <div className="detail-card card-fund">
+                <div className="detail-card card-fund mb-5">
                     <img src={donateData.image} className='card-fund'></img>
                     <div className='detail-container'>
                         <h1>{donateData.title}</h1>
@@ -37,7 +39,17 @@ function DonateDetail() {
                         <ModalDonate open={isOpen} onClose={() => setIsOpen(false)}></ModalDonate>
                     </div>
                 </div>
+                
+               <h1 className='mb-4' style={{marginTop: "100px"}}>List Donation</h1>
+                {/* <ListDonation />
+                <ListDonation /> */}
+                {listDonates.map((listDonate, index) => (
+                    <div key={listDonate.id + index}>
+                        <ListDonation listDonate={ listDonate }/>
+                    </div>
+                ))}
             </div>
+            
         </>
     )
 }

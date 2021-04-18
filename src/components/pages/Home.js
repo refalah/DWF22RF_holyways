@@ -19,7 +19,7 @@ function Home() {
            <Hero2></Hero2>
            
            <div className='donate-container'>
-                <h5 className="text-center dono-header">Donate Now</h5>
+                <h3 className="text-center dono-header">Donate Now</h3>
                 <div className='container mt-5'>
                
                 <div className='card '>
