@@ -19,8 +19,6 @@ import NewFund from './components/pages/NewFund/NewFund';
 import ScrollIntoView from "./components/ScrollIntoView";
 import ViewFund from './components/pages/ViewFund/ViewFund';
 
-
-
 function App() {
   return (
     <>
