@@ -37,3 +37,13 @@
     border-radius: 10px;
     font-size: 12px;
 }
+
+.status-donate {
+    background: #C32424;
+    color: #fff;
+
+    border: none;
+    padding: 2px 25px;
+    border-radius: 10px;
+    font-size: 14px;
+}

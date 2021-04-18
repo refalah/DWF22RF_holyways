@@ -5,7 +5,9 @@ import '../DonateDetail/DonateDetail.css'
 import {convertToRupiah} from '../../../utils/index'
 import ModalDonate from '../../Modal/ModalDonate'
 import ListDonation from '../../Card/ListDonation'
+import PendingDonation from '../../Card/PendingDonation'
 import listDonates from '../../../fakeData/listDonate.json'
+import pendingDonates from '../../../fakeData/penDonate.json'
 
 const ViewFund = () => {
     const params = useParams();
@@ -47,7 +49,16 @@ const ViewFund = () => {
                         <ListDonation listDonate={ listDonate }/>
                     </div>
                 ))}
-            </div> 
+
+                <h1 className='mb-4' style={{marginTop: "40px"}}>Donation has not been approved</h1>
+                    {/* <ListDonation />
+                    <ListDonation /> */}
+                    {pendingDonates.map((pendingDonate, index) => (
+                        <div key={pendingDonate.id + index}>
+                            <PendingDonation pendingDonate={ pendingDonate }/>
+                        </div>
+                    ))}
+                </div> 
         </>
     )
 }

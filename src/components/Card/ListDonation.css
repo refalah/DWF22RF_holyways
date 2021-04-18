@@ -24,6 +24,13 @@
     line-height: 12px;
 }
 
+.list-donation-total {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 .list-donation-total p{
     padding-top: 15px;
     padding-bottom: 20px;

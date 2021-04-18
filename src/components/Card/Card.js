@@ -1,9 +1,16 @@
+import React, {useState, useContext} from 'react'
 import { useHistory } from "react-router-dom";
 import './Card.css'
 import {convertToRupiah} from '../../utils/index'
+import { UserContext } from '../../contexts/userContext'
+import ModalLogin from '../Modal/ModalLogin'
 
 const Card = ({ donateData, btnName, routeName }) => {
     const { id, title, description, sum, image} = donateData;
+
+    const [ state, ] = useContext(UserContext)
+    const [isOpen, setIsOpen] = useState(false)
+
     const router = useHistory();
 
     const goToPage = () => {
@@ -35,7 +42,14 @@ const Card = ({ donateData, btnName, routeName }) => {
                 
                 <div className='btns'>
                     <p>{convertToRupiah(sum)}</p>
-                    <button onClick={goToPage}>{btnName}</button>                    
+                    {!state.isLogin ? (
+                            <>
+                                <button onClick={() => {setIsOpen(true)}}>{btnName}</button>
+                                <ModalLogin open={isOpen} onClose={() => setIsOpen(false)}></ModalLogin>
+                            </>
+                        ) : (
+                            <button onClick={goToPage}>{btnName}</button>
+                        )}                   
                 </div>
         </div>
     )

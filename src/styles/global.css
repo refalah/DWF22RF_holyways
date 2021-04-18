@@ -86,6 +86,26 @@ h3 {
     cursor: pointer;
 }
 
+.img-approve {
+    height: auto;
+    width: 285px;
+    margin-bottom: 20px;
+}
+
+.modal-approve {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    width: 350px;
+    height: 450px;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+
+
 /* .row .cards {
     margin: 0 10px;
 } */
