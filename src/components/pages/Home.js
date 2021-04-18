@@ -27,7 +27,7 @@ function Home() {
                     <div className='row'>
                         {donateDatas.slice(-3).map((donateData, index) => (
                             <div className='col-sm-4' key={donateData.id + index}>
-                                <Card donateData={ donateData }/>
+                                <Card donateData={ donateData } btnName = { 'Donate' } routeName = { "donate-detail" }/>
                             </div>
                         ))}
                         

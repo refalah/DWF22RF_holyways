@@ -31,7 +31,6 @@ h6, p {
 }
 
 .btns {
-    padding-top: 10px;
     margin: 1rem;
     bottom: 0;
     display: flex;
@@ -46,10 +45,14 @@ h6, p {
     border: none;
     padding: 5px 25px;
     border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: bolder;
 }
 
+
 .progress-bar{
-    
+    margin-top: 15px;
     background-color: grey;
     height: 5px;
     border-radius: 10px;

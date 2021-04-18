@@ -27,7 +27,7 @@ function RaiseFund() {
                     <div className='row'>
                         {donateDatas.map((donateData, index) => (
                             <div className='col-sm-4' key={donateData.id + index}>
-                                <Card donateData={ donateData }/>
+                                <Card donateData={ donateData } btnName = { 'View Fund' } routeName = { "fund" }/>
                             </div>
                         ))}
                         

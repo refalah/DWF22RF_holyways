@@ -2,12 +2,12 @@ import { useHistory } from "react-router-dom";
 import './Card.css'
 import {convertToRupiah} from '../../utils/index'
 
-const Card = ({ donateData }) => {
+const Card = ({ donateData, btnName, routeName }) => {
     const { id, title, description, sum, image} = donateData;
     const router = useHistory();
 
-    const goToDetailPage = () => {
-        router.push(`/donate-detail/${id}`);
+    const goToPage = () => {
+        router.push(`/${routeName}/${id}`);
     };
     
     return (
@@ -35,7 +35,7 @@ const Card = ({ donateData }) => {
                 
                 <div className='btns'>
                     <p>{convertToRupiah(sum)}</p>
-                    <button onClick={goToDetailPage}><a>Donate</a></button>                    
+                    <button onClick={goToPage}>{btnName}</button>                    
                 </div>
         </div>
     )
