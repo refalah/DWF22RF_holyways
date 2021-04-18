@@ -3,6 +3,7 @@ import { NavDropdown } from "react-bootstrap";
 import React, {useState, useContext} from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import ModalLogin from '../Modal/ModalLogin'
+import ModalRegister from '../Modal/ModalRegister'
 import './Navbar.css'
 import { UserContext } from '../../contexts/userContext'
 
@@ -12,6 +13,7 @@ function Navbar(){
     // const [showModal, setShowModal] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
 
+    const [isOpens, setIsOpens] = useState(false)
     // const openModal = () => {
     //     setShowModal(prev => !prev)
     // }
@@ -40,7 +42,8 @@ function Navbar(){
                                 <ModalLogin open={isOpen} onClose={() => setIsOpen(false)}></ModalLogin>
                             </li>
                             <li>
-                                <Link to="/register" className="nav-links-mobile">Register</Link>
+                            <div className='nav-links-mobile' onClick={() => {setIsOpens(true)}}>Register </div>
+                                <ModalRegister opens={isOpens} onClose={() => setIsOpens(false)}></ModalRegister>
                             </li>
                             </>
                          ) : ( 
