@@ -59,7 +59,7 @@ function Navbar(){
                                 </ul>
                             </div> */}
                             <NavDropdown title="Avatar" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1" >
+                                <NavDropdown.Item href="#action/3.1" onClick={() => router.push("/profile")}>
                                     <div>Profile</div>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2" onClick={() => router.push("/raise-fund")}>
