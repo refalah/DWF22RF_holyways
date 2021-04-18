@@ -31,6 +31,51 @@ body {
     padding: 0;
 }
 
-/* .row .cards {
-    margin: 0 10px;
-} */
+
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-sample-content {
+    margin: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.modal-sample-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.input-group-sample {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.grab-input {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 5px;
+
+    background: rgba(188, 188, 188, 0.25);
+    border: 2px solid #BCBCBC;
+}
+
+.modal-sample-link {
+    background: #C32424;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    color: white;
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
