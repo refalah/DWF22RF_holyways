@@ -62,12 +62,25 @@
     padding: 10px 15px;
     border: 1px solid #fff;
     cursor: pointer;
-  }
+}
 
-  #basic-nav-dropdown {
-      text-decoration: none;
-      color: #fff;
-  }
+
+
+#basic-nav-dropdown {
+    text-align: left;
+    color: transparent;
+    height: 60px;
+    width: 60px;
+    background-image: url('../../images/User.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 60px;
+    border: none;
+}
+
+.drop-container {
+    border-radius: 10px;
+}
 
   @media screen and (min-width: 768px) {
     /* For desktop: */

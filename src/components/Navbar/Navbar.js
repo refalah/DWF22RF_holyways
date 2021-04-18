@@ -59,18 +59,57 @@ function Navbar(){
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </div> */}
-                            <NavDropdown title="Avatar" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1" onClick={() => router.push("/profile")}>
-                                    <div>Profile</div>
+                            <div style={{
+                                display:'flex'
+                            }}>
+                                
+                            <NavDropdown id="basic-nav-dropdown" style={{marginTop: '20px'}}>
+                                <div className='drop-container'>
+                                <NavDropdown.Item className='dropdown-item' href="#action/3.1" onClick={() => router.push("/profile")}>
+                                    
+                                    <div style={{
+                                        display:'flex'
+                                    }}>
+                                        <img src='/user-icon.svg' style={{
+                                            height: '20px',
+                                            width: '20px',
+                                            marginRight: '10px'
+                                        }}/>
+                                        <div>Profile</div>
+                                    </div>
+                                    
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2" onClick={() => router.push("/raise-fund")}>
+                                <NavDropdown.Item className='dropdown-item' href="#action/3.2" onClick={() => router.push("/raise-fund")}>
+                                <div style={{
+                                    display:'flex'
+                                }}>
+                                    <img src='/fund-icon.svg' style={{
+                                        height: '20px',
+                                        width: '20px',
+                                        marginRight: '10px'
+                                    }}/>
                                     <div>Raise Fund</div>
+                                </div>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4" onClick={handleLogout}>
-                                    <div className='modal-logout-link' >Logout</div>
+                                <NavDropdown.Item className='dropdown-item' href="#action/3.4" onClick={handleLogout}>
+                                    <div style={{
+                                        display:'flex'
+                                    }}>
+                                        <img src='/logout-icon.svg' style={{
+                                            height: '20px',
+                                            width: '20px',
+                                            marginRight: '10px'
+                                        }}/>
+                                        <div className='modal-logout-link' >Logout</div>
+                                    </div>
                                 </NavDropdown.Item>
+                                </div>
                             </NavDropdown>
+                                
+                            </div>
+
+                            
                             </>
                          )}
                        
