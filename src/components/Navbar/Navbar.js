@@ -63,7 +63,7 @@ function Navbar(){
                                 display:'flex'
                             }}>
                                 
-                            <NavDropdown id="basic-nav-dropdown" style={{marginTop: '20px'}}>
+                            <NavDropdown id="basic-nav-dropdown" style={{}}>
                                 <div className='drop-container'>
                                 <NavDropdown.Item className='dropdown-item' href="#action/3.1" onClick={() => router.push("/profile")}>
                                     
