@@ -1,9 +1,8 @@
 import React, {useContext} from 'react'
 import { useHistory } from "react-router-dom";
-import { UserContext } from '../../contexts/userContext'
-import './RaiseFund.css'
-import Card from '../Card/Card'
-import donateDatas from '../../fakeData/donateData.json'
+import { UserContext } from '../../../contexts/userContext'
+import Card from '../../Card/Card'
+import donateDatas from '../../../fakeData/donateData.json'
 
 
 function RaiseFund() {

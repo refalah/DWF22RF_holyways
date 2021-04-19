@@ -1,7 +1,6 @@
 import React, {useState, useContext} from 'react'
 import {useParams} from 'react-router-dom'
 import donateDatas from '../../../fakeData/donateData.json'
-import '../DonateDetail/DonateDetail.css'
 import {convertToRupiah} from '../../../utils/index'
 import ModalDonate from '../../Modal/ModalDonate'
 import CardListDonation from '../../Card/CardListDonation'

@@ -1,7 +1,6 @@
 import { useHistory } from "react-router-dom";
 import Button from 'react-bootstrap/Button'
 import { Form, FormFile } from "react-bootstrap";
-import './NewFund.css'
 
 const NewFund = () => {
     

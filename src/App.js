@@ -8,10 +8,9 @@ import Navbar from './components/Navbar/Navbar'
 
 import './App.css';
 import PrivateRoute from "./components/PrivateRoute";
-import Home from './components/pages/Home';
+import Home from './components/pages/Home/Home';
 import DonateDetail from './components/pages/DonateDetail/DonateDetail';
-import Donate from './components/pages/Donate';
-import RaiseFund from './components/pages/RaiseFund';
+import RaiseFund from './components/pages/RaiseFund/RaiseFund';
 import Profile from './components/pages/Profile/Profile';
 import NewFund from './components/pages/NewFund/NewFund';
 
@@ -31,7 +30,6 @@ function App() {
             <PrivateRoute path='/raise-fund' exact component={RaiseFund}></PrivateRoute>
             <PrivateRoute path='/new-fund' exact component={NewFund}></PrivateRoute>
             <PrivateRoute path='/fund/:id' exact component={ViewFund}></PrivateRoute>
-            <PrivateRoute path='/donate' exact component={Donate}></PrivateRoute>
             <PrivateRoute path='/donate-detail/:id' exact component={DonateDetail}></PrivateRoute>
           </Switch>
         </ScrollIntoView>

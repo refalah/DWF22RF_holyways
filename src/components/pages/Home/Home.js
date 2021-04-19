@@ -1,13 +1,11 @@
 import React, {useContext} from 'react'
-import '../../App.css'
-import HeroTop from '../Hero/HeroTop'
-import HeroMid from '../Hero/HeroMid'
-import './Home.css'
+import HeroTop from '../../Hero/HeroTop'
+import HeroMid from '../../Hero/HeroMid'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Card from '../Card/Card'
+import Card from '../../Card/Card'
 import { useHistory } from "react-router-dom";
-import { UserContext } from '../../contexts/userContext'
-import donateDatas from '../../fakeData/donateData.json'
+import { UserContext } from '../../../contexts/userContext'
+import donateDatas from '../../../fakeData/donateData.json'
 
 function Home() {
     const [ state, dispatch ] = useContext(UserContext);

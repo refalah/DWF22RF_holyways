@@ -4,7 +4,6 @@ import React, {useState, useContext} from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import ModalLogin from '../Modal/ModalLogin'
 import ModalRegister from '../Modal/ModalRegister'
-import './Navbar.css'
 import { UserContext } from '../../contexts/userContext'
 
 function Navbar(){
