@@ -20,7 +20,7 @@ function Home() {
            
            <div className='donate-container'>
                 <h3 className="text-center dono-header">Donate Now</h3>
-                <div className='container mt-5'>
+                <div className='container mt-3'>
                
                 <div className='card '>
                 <div className='card-body card-fund'>
