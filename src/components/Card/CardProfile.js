@@ -1,6 +1,5 @@
-import './ProfileCard.css'
 
-const ProfileCard = () => {
+const CardProfile = () => {
     return (
         <div>
             <div className='profile-card'>
@@ -24,4 +23,4 @@ const ProfileCard = () => {
     )
 }
 
-export default ProfileCard
+export default CardProfile

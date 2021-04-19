@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
-import './Hero2.css'
 import '../../App.css'
 
 
-function Hero2() {
+function HeroMid() {
     
     return (
         <>
@@ -19,4 +18,4 @@ function Hero2() {
     )
 }
 
-export default Hero2
+export default HeroMid

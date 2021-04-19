@@ -1,5 +1,5 @@
-import './History.css'
-const History = () => {
+
+const CardHistory = () => {
     return (
         <div>
             <div className='history mb-3'>
@@ -21,4 +21,4 @@ const History = () => {
 }
 
 
-export default History
+export default CardHistory

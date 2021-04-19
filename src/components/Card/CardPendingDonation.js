@@ -1,8 +1,7 @@
 import React, {useState, useContext} from 'react'
-import './ListDonation.css'
 import ModalApprove from '../Modal/ModalApprove'
 
-const PendingDonation = ({pendingDonate}) => {
+const CardPendingDonation = ({pendingDonate}) => {
     const {name, date, total} = pendingDonate;
 
     const [isOpen, setIsOpen] = useState(false);
@@ -27,4 +26,4 @@ const PendingDonation = ({pendingDonate}) => {
     )
 }
 
-export default PendingDonation
+export default CardPendingDonation

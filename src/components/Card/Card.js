@@ -1,6 +1,5 @@
 import React, {useState, useContext} from 'react'
 import { useHistory } from "react-router-dom";
-import './Card.css'
 import {convertToRupiah} from '../../utils/index'
 import { UserContext } from '../../contexts/userContext'
 import ModalLogin from '../Modal/ModalLogin'

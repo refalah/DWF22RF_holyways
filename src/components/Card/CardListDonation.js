@@ -1,6 +1,5 @@
-import './ListDonation.css'
 
-const ListDonation = ({listDonate}) => {
+const CardListDonation = ({listDonate}) => {
     const {name, date, total} = listDonate
     return (
         <>
@@ -23,4 +22,4 @@ const ListDonation = ({listDonate}) => {
 
 
 
-export default ListDonation
+export default CardListDonation

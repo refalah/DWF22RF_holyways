@@ -4,8 +4,8 @@ import donateDatas from '../../../fakeData/donateData.json'
 import '../DonateDetail/DonateDetail.css'
 import {convertToRupiah} from '../../../utils/index'
 import ModalDonate from '../../Modal/ModalDonate'
-import ListDonation from '../../Card/ListDonation'
-import PendingDonation from '../../Card/PendingDonation'
+import CardListDonation from '../../Card/CardListDonation'
+import PendingDonation from '../../Card/CardPendingDonation'
 import listDonates from '../../../fakeData/listDonate.json'
 import pendingDonates from '../../../fakeData/penDonate.json'
 
@@ -42,17 +42,17 @@ const ViewFund = () => {
                 </div>
                 
                <h1 className='mb-4' style={{marginTop: "100px"}}>List Donation</h1>
-                {/* <ListDonation />
-                <ListDonation /> */}
+                {/* <CardListDonation />
+                <CardListDonation /> */}
                 {listDonates.map((listDonate, index) => (
                     <div key={listDonate.id + index}>
-                        <ListDonation listDonate={ listDonate }/>
+                        <CardListDonation listDonate={ listDonate }/>
                     </div>
                 ))}
 
                 <h1 className='mb-4' style={{marginTop: "40px"}}>Donation has not been approved</h1>
-                    {/* <ListDonation />
-                    <ListDonation /> */}
+                    {/* <CardListDonation />
+                    <CardListDonation /> */}
                     {pendingDonates.map((pendingDonate, index) => (
                         <div key={pendingDonate.id + index}>
                             <PendingDonation pendingDonate={ pendingDonate }/>

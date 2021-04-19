@@ -4,7 +4,7 @@ import donateDatas from '../../../fakeData/donateData.json'
 import './DonateDetail.css'
 import {convertToRupiah} from '../../../utils/index'
 import ModalDonate from '../../Modal/ModalDonate'
-import ListDonation from '../../Card/ListDonation'
+import CardListDonation from '../../Card/CardListDonation'
 import listDonates from '../../../fakeData/listDonate.json'
 
 function DonateDetail() {
@@ -41,11 +41,11 @@ function DonateDetail() {
                 </div>
                 
                <h1 className='mb-4' style={{marginTop: "100px"}}>List Donation</h1>
-                {/* <ListDonation />
-                <ListDonation /> */}
+                {/* <CardListDonation />
+                <CardListDonation /> */}
                 {listDonates.map((listDonate, index) => (
                     <div key={listDonate.id + index}>
-                        <ListDonation listDonate={ listDonate }/>
+                        <CardListDonation listDonate={ listDonate }/>
                     </div>
                 ))}
             </div>

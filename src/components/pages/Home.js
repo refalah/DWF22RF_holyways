@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import '../../App.css'
-import Hero from '../Hero/Hero'
-import Hero2 from '../Hero-2/Hero2'
+import HeroTop from '../Hero/HeroTop'
+import HeroMid from '../Hero/HeroMid'
 import './Home.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Card from '../Card/Card'
@@ -13,10 +13,10 @@ function Home() {
     const [ state, dispatch ] = useContext(UserContext);
     return (
         <>
-           <Hero></Hero> 
+           <HeroTop></HeroTop> 
            <div className='img-1'></div>
            <div className='img-2'></div>
-           <Hero2></Hero2>
+           <HeroMid></HeroMid>
            
            <div className='donate-container'>
                 <h3 className="text-center dono-header">Donate Now</h3>

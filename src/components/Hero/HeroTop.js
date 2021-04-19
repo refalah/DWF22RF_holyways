@@ -1,11 +1,9 @@
 import React, {useState, useContext} from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import './Hero.css'
-import '../../App.css'
 import { UserContext } from '../../contexts/userContext'
 import ModalLogin from '../Modal/ModalLogin'
 
-function Hero() {
+function HeroTop() {
     const [ state, ] = useContext(UserContext)
     const [isOpen, setIsOpen] = useState(false)
     const router = useHistory();
@@ -33,4 +31,4 @@ function Hero() {
     )
 }
 
-export default Hero
+export default HeroTop

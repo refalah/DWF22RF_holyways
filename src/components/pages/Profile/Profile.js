@@ -1,19 +1,15 @@
 import React, {useState, useContext} from 'react'
 import {useParams} from 'react-router-dom'
-import donateDatas from '../../../fakeData/donateData.json'
-import './Profile.css'
-import History from '../../Card/History'
-import ProfileCard from '../../Card/ProfileCard'
+import History from '../../Card/CardHistory'
+import CardProfile from '../../Card/CardProfile'
 
 function Profile() {
-    const params = useParams();
-    const {id} = params;
 
     return (
         <>
             <div className="container mt-5">
                 <div className="profile-container">
-                    <ProfileCard/>
+                    <CardProfile/>
                     <div className='history-container'>
                         <h1>History Donation</h1>
                         <History/>
