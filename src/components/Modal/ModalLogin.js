@@ -1,6 +1,5 @@
 import React, {useContext} from 'react'
 import { UserContext } from '../../contexts/userContext'
-import './ModalLogin.css'
 import ReactDom from 'react-dom'
 
 function ModalLogin({open, onClose}) {

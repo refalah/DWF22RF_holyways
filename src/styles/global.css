@@ -133,6 +133,30 @@ h3 {
 
 /* Modal */
 
+.modal-register {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    width: 416px;
+    height: 408px;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.modal-login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    width: 416px;
+    height: 350px;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
 .dark-overlay {
     position: fixed;
     top: 0;

@@ -1,7 +1,6 @@
 import React, {useContext, useState} from 'react'
 import ReactDom from 'react-dom'
 import ModalLogin from '../Modal/ModalLogin'
-import './ModalRegister.css'
 
 function ModalRegister({opens, onClose}) {
     const [isOpen, setIsOpen] = useState(false)
