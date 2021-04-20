@@ -11,11 +11,20 @@ function ModalLogin({open, onClose}) {
         })
         onClose()
     }
+    const handleCloseLogin = () => {
+        dispatch({
+            type: "CLOSELOGIN"
+        })
+    }
+    const handleOpenRegister = () => {
+        dispatch({
+            type: "OPENREGISTER"
+        })
+    }
 
     if (!open) return null
     return ReactDom.createPortal(
         <>
-            {/* {showModal ? <div> MOdal Here</div> : null} */}
             <div className='dark-overlay' onClick={onClose}></div>
             <div className='modal-login'>
 
@@ -26,7 +35,14 @@ function ModalLogin({open, onClose}) {
                         <input type='password' placeholder='Password' className='password-input grab-input'></input>
                     </div>
                     <div style={{textAlign: 'center'}} className='modal-sample-link' onClick={handleLogin}>Login</div>
-                    <p style={{textAlign: 'center'}}>Don't have an account ? Click Here</p>
+                    <p style={{textAlign: 'center'}}>Don't have an account ?
+                        <span onClick={() => {
+                                handleCloseLogin();
+                                handleOpenRegister();
+                            }} style={{fontWeight: "bold", cursor: "pointer", marginLeft: "5px"}}>
+                                Click Here
+                        </span>
+                    </p>
                 </div>
                    
             </div>

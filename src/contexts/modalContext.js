@@ -1,6 +1,6 @@
-import {createContext, useReducer} from 'react'
+import { createContext, useReducer } from 'react'
 
-export const UserContext = createContext();
+export const ModalContext = createContext();
 
 const initialState = {
     isLogin: false,
@@ -9,7 +9,7 @@ const initialState = {
 }
 
 const reducer = (state, action) => {
-    const { type, payload } = action
+    const { type, payload } = action;
 
     switch (type) {
         case "OPENLOGIN":
@@ -47,14 +47,12 @@ const reducer = (state, action) => {
     }
 }
 
-export const UserContextProvider = ({children}) => {
-    const isLogin = false;
-    const titleContext = 'Context Incoming'
+export const ModalContextProvider = ({children}) => {
 
     const [ state, dispatch ] = useReducer(reducer, initialState)
     return (
-        <UserContext.Provider value={[ state, dispatch ]}>
+        <ModalContext.Provider value={[ state, dispatch ]}>
             {children}
-        </UserContext.Provider>
+        </ModalContext.Provider>
     )
 }
